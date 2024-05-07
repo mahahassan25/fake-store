@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fake store</title>
+    <script src="https://kit.fontawesome.com/94a6ce1d7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="fotorama/fotorama.css">
+    <script src="fotorama/fotorama.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="text-capitalize">
+    <header class="my-bg-green">
+        <div class="container d-flex ">
+            <div class="text-light pt-2 pb-1 flex-fill fw-bold">worldwide shipping through instagram dm</div>
+            <button class="d-none btn text-light d-lg-flex align-items-baseline">
+                <i class="fa-regular fa-user"></i>
+                <span class="ps-2"> login / register</span>
+            </button>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-md my-text-green ">
+        <div class="container d-flex">
+            <div class=" d-flex order-md-2">
+                <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon my-text-green"></span>
+                </button>
+                <div class="d-flex flex-grow-1">
+                    <input type="text" class=" d-none form-control  rounded-5 d-md-flex " placeholder="I'm searching for">
+               <button class="btn ps-0 ">
+                <i class="fa-solid fa-magnifying-glass my-text-green"></i>
+               </button>
+                </div>
+            </div>
+           <div class="navbar-brand order-md-1">
+            <img src="images/logoshop.avif" alt="" class="img-fluid" width="70">
+           </div>
+           <div class="order-md-3 d-flex">
+            <i class="fa-regular fa-user d-md-none"></i>
+           <div class="d-flex flex-column">
+            <i class="fa-regular fa-heart d-none d-md-flex"></i>
+            <span class="d-none d-md-flex">wishlist</span>
+           </div>
+          <div class="d-flex flex-column ps-4">
+            <i class="fa-solid fa-cart-shopping ps-1"></i>
+            <span class="d-none d-md-flex">cart</span>
+          </div>
+           </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="d-none d-md-flex">
+       <div class="container">
+        <ul class="nav nav-underline">
+            <li class="nav-item"><a href="" class="nav-link"></a>Home</li>
+            <li class="nav-item"><a href="" class="nav-link"></a>Shop</li>
+            <li class="nav-item"><a href="" class="nav-link"></a>electronics</li>
+            <li class="nav-item"><a href="" class="nav-link"></a>fashion</li>
+            <li class="nav-item"><a href="" class="nav-link"></a>accessories</li>
+        </ul>
+       </div>
+    </div>
+    <div class="offcanvas offcanvas-start d-flex flex-column" id="sidebar">
+        <div class="container">
+            <div class="offcanvas-header">
+                <img src="images/logoshop.avif" alt="" width="60" class="offcanvas-title">
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link"></a>Home</li>
+                    <hr >
+                    <li class="nav-item"><a href="" class="nav-link"></a>Shop</li>
+                    <hr>
+                    <li class="nav-item"><a href="" class="nav-link"></a>fashion</li>
+                    <hr>
+                    <li class="nav-item"><a href="" class="nav-link"></a>electronics</li>
+                    <hr>
+                    <li class="nav-item"><a href="" class="nav-link"></a>accessories</li>
+    
+                </ul>
+            </div>
+            <div class="">
+                <button class=" btn d-lg-flex ">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="ps-2"> login / register</span>
+                </button> 
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- fotorama -->
+    <div class="container mt-3 d-flex justify-content-center">
+           <div class="fotorama  " data-arrows="true"
+           data-click="true"
+           data-swipe="true">
+            <img src="images/fashion.avif" alt="" class="img-fluid">
+            <img src="images/product1.avif" alt="" class="img-fluid">
+            <img src="images/accessories.jpg" alt="" class="img-fluid">
+           </div>
+    </div>
+
+    <!-- new collection -->
+    <div class="container mt-5 ">
+        <h3 class="text-center">new collection</h3>
+        <ul class="nav nav-pills justify-content-center gap-3">
+            <li class="nav-item"><a href="#" class=" nav-link active text-uppercase my-nav">ALL</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary text-uppercase my-nav">electronics</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary text-uppercase my-nav">fashion</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary text-uppercase my-nav">accessories</a></li>
+        </ul>
+        <div class="row mt-4" id="product">
+            
+        </div>
+    </div>
+    
+    <!-- instagram -->
+    <div class="container mt-4">
+        <h3 class="text-center">Follow us on Instagram #BNGIRLS</h3>
+        <div class="d-flex position-relative">
+        <img src="images/product1.avif" alt="" class="img-fluid imgfooter" >
+        <img src="images/acc.jpg" alt="" class="img-fluid imgfooter">
+        <img src="images/fashion.avif" alt="" class="img-fluid imgfooter">
+        <img src="images/product2.webp" alt="" class="img-fluid imgfooter">
+        <img src="images/accessories.jpg" alt="" class="img-fluid imgfooter">
+        <img src="images/fashion3.webp" alt="" class="img-fluid imgfooter">
+        <a class="btn bg-white d-flex position-absolute top-50 start-50 align-items-baseline" href="https://www.instagram.com/bynusayba/?hl=ar">
+            <i class="fa-brands fa-instagram ps"></i>
+            <span class="ps-3">@fake store</span>
+        </a>
+        </div>
+    </div>
+    <hr class="mt-0">
+    <!-- contact -->
+    <div class="container  ">
+       <div class="row d-flex flex-column gap-4 flex-lg-row">
+        <div class="col-12  col-lg-4 ">
+            <img src="images/logoshop.avif" alt="" class="img-fluid" width="100">
+            <div>(+20) 101 - 530 - 6226</div>
+            <a href="contact@fakestore.com" class="text-black text-decoration-none">contact@fakestore.com</a>
+            <div>fakestore.com</div>
+           </div>
+           <div class="col-12  col-lg-3 my-text-green d-flex gap-3 ">
+            <i class="fa-brands fa-instagram fs-3"></i>
+            <i class="fa-brands fa-facebook fs-3"></i>
+           </div>
+           <div class="col-12 text-center col-lg-4 ">
+            <img src="images/visa.webp" alt="" width="100" class="img-fluid">
+           </div>
+       </div>
+    </div>
+    <hr>
+    <footer class="container mt-3">
+        <a href="" class=" text-black text-decoration-none fw-bold fs-4 d-flex justify-content-center">
+            <span >Delivery & Return</span>
+        </a>
+        <div class="text-light my-bg-green text-center p-3">
+            @fake store 2023 – All Right reserved!
+        </div>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
